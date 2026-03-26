@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse NexStep premium men's, women's, sports, and casual shoes with search, wishlist, and cart functionality.">
+  <title>Shop NexStep | Premium Shoe Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>Shop premium footwear collections built for U.S. customers.</span>
+      <span>Support: support@nexstep.site</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">NexStep</span><span class="brand-note">Premium Shoe House</span></a>
+      <button class="menu-toggle" type="button" data-menu-toggle>Menu</button>
+      <div class="nav-shell" data-nav-shell>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="help.html">Help</a>
+        </nav>
+        <div class="header-actions">
+          <a class="utility-link" href="wishlist.html">Wishlist <span class="count-badge" data-wishlist-count>0</span></a>
+          <a class="utility-link" href="cart.html">Cart <span class="count-badge" data-cart-count>0</span></a>
+          <a class="button primary" href="checkout.html">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-card">
+          <p class="eyebrow">Product Listing</p>
+          <h1>Premium shoes filtered the way real shoppers browse.</h1>
+          <p class="lead">Search by style, filter by audience or category, and move products directly into your cart or wishlist through a realistic storefront flow.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container products-layout">
+        <aside class="sidebar-card stack-card">
+          <div>
+            <p class="eyebrow">Filter</p>
+            <h3>Collections</h3>
+          </div>
+          <div class="filter-list">
+            <button class="filter-button is-active" type="button" data-filter-button="all">All Products</button>
+            <button class="filter-button" type="button" data-filter-button="men">Men</button>
+            <button class="filter-button" type="button" data-filter-button="women">Women</button>
+            <button class="filter-button" type="button" data-filter-button="sports">Sports</button>
+            <button class="filter-button" type="button" data-filter-button="casual">Casual</button>
+          </div>
+          <div class="badge-row">
+            <span class="badge-soft">Secure checkout</span>
+            <span class="badge-soft">PayPal enabled</span>
+            <span class="badge-soft">COD available</span>
+          </div>
+          <div class="info-list">
+            <span>Free shipping on U.S. orders over $175.</span>
+            <span>Premium returns support for 30 days.</span>
+            <span>Use search for terms like runner, court, suede, or trail.</span>
+          </div>
+        </aside>
+        <div>
+          <div class="search-bar catalog-toolbar">
+            <input type="search" data-product-search placeholder="Search running, leather, court, knit...">
+            <select data-sort-select aria-label="Sort products">
+              <option value="featured">Sort: Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Top Rated</option>
+            </select>
+            <button class="button secondary" type="button" data-clear-filters>Clear Filters</button>
+          </div>
+          <p class="results-copy" data-results-copy></p>
+          <div class="products-grid" data-products-grid></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-meta">
+        <span>&copy; 2026 NexStep</span>
+        <span><a href="payment-methods.html">Payment Methods</a> | <a href="return-policy.html">Returns</a> | <a href="customer-service.html">Customer Service</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner hidden" data-cookie-banner>
+    <p>We use cookies to remember your cart and shopping preferences.</p>
+    <div class="button-row">
+      <button class="button ghost" type="button" data-cookie-action="declined">Decline</button>
+      <button class="button primary" type="button" data-cookie-action="accepted">Accept</button>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

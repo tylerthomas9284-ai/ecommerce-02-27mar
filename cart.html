@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review your NexStep shopping cart, update quantities, and proceed to secure checkout.">
+  <title>NexStep Cart | Review Your Bag</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topbar"><div class="topbar-inner"><span>Your NexStep bag stays saved on this device.</span><span>support@nexstep.site</span></div></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">NexStep</span><span class="brand-note">Premium Shoe House</span></a>
+      <button class="menu-toggle" type="button" data-menu-toggle>Menu</button>
+      <div class="nav-shell" data-nav-shell>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="contact.html">Contact</a>
+          <a href="help.html">Help</a>
+        </nav>
+        <div class="header-actions">
+          <a class="utility-link" href="wishlist.html">Wishlist <span class="count-badge" data-wishlist-count>0</span></a>
+          <a class="utility-link" href="cart.html">Cart <span class="count-badge" data-cart-count>0</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-card">
+          <p class="eyebrow">Shopping Cart</p>
+          <h1>Review your bag before checkout.</h1>
+          <p class="lead">Adjust quantities, remove items, and move into card, PayPal, or Cash on Delivery checkout when you are ready.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container checkout-grid">
+        <div class="cart-items" data-cart-items></div>
+        <aside class="summary-card stack-card">
+          <div>
+            <p class="eyebrow">Order Summary</p>
+            <div data-cart-summary></div>
+          </div>
+          <div class="info-list">
+            <span>Free shipping unlocks at $175.</span>
+            <span>Estimated tax is based on a U.S. retail rate.</span>
+            <span>Need help before paying? Visit <a href="customer-service.html">Customer Service</a>.</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-inner"><div class="footer-meta"><span>&copy; 2026 NexStep</span><span><a href="products.html">Continue Shopping</a> | <a href="checkout.html">Checkout</a></span></div></div></footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View your NexStep account overview, saved favorites, and recent orders.">
+  <title>NexStep Account | Orders and Saved Shopping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topbar"><div class="topbar-inner"><span>My Account</span><span>Order history and saved activity stay on this device.</span></div></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">NexStep</span><span class="brand-note">Premium Shoe House</span></a>
+      <button class="menu-toggle" type="button" data-menu-toggle>Menu</button>
+      <div class="nav-shell" data-nav-shell>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="cart.html">Cart</a>
+          <a href="customer-service.html">Customer Service</a>
+          <a href="help.html">Help</a>
+        </nav>
+        <div class="header-actions">
+          <a class="utility-link" href="wishlist.html">Wishlist <span class="count-badge" data-wishlist-count>0</span></a>
+          <a class="utility-link" href="cart.html">Cart <span class="count-badge" data-cart-count>0</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero"><div class="container"><div class="page-hero-card"><p class="eyebrow">Account</p><h1>Order tracking and shopper overview</h1><p class="lead">This basic account UI shows recent NexStep orders, saved favorites, and bag activity without requiring a backend login.</p></div></div></section>
+    <section class="section">
+      <div class="container metric-grid" data-account-stats></div>
+      <div class="container account-grid" style="margin-top:1.5rem;">
+        <div class="account-card stack-card">
+          <div>
+            <p class="eyebrow">Profile Snapshot</p>
+            <h3>NexStep Member</h3>
+          </div>
+          <div class="detail-list">
+            <span>Preferred region: United States</span>
+            <span>Support email: support@nexstep.site</span>
+            <span>Saved wishlist and order confirmations are available on this device.</span>
+          </div>
+          <div class="support-list">
+            <a class="button secondary" href="wishlist.html">View Wishlist</a>
+            <a class="button secondary" href="cart.html">Open Cart</a>
+          </div>
+        </div>
+        <div class="account-card stack-card">
+          <div>
+            <p class="eyebrow">Service Access</p>
+            <h3>Need post-purchase support?</h3>
+          </div>
+          <p>Use the dedicated help, customer service, return policy, and feedback pages for the same support structure shoppers expect on established U.S. footwear sites.</p>
+          <div class="support-list">
+            <a class="button ghost" href="customer-service.html">Customer Service</a>
+            <a class="button ghost" href="return-policy.html">Returns</a>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-top:1.5rem;">
+        <div class="account-card">
+          <p class="eyebrow">Recent Orders</p>
+          <div class="orders-list" data-orders-list></div>
+        </div>
+      </div>
+      <div class="container" style="margin-top:1.5rem;">
+        <div class="account-card">
+          <p class="eyebrow">Support Activity</p>
+          <div class="orders-list" data-support-history></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div class="footer-meta"><span>&copy; 2026 NexStep</span><span><a href="contact.html">Contact Us</a> | <a href="feedback.html">Feedback</a></span></div></div></footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

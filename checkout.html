@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete your NexStep order with credit card, debit card, PayPal, or Cash on Delivery.">
+  <title>NexStep Checkout | Secure Order Placement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topbar"><div class="topbar-inner"><span>Secure checkout for U.S. shoppers.</span><span>Credit/Debit Card, PayPal, and COD supported.</span></div></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">NexStep</span><span class="brand-note">Premium Shoe House</span></a>
+      <button class="menu-toggle" type="button" data-menu-toggle>Menu</button>
+      <div class="nav-shell" data-nav-shell>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="cart.html">Cart</a>
+          <a href="payment-methods.html">Payments</a>
+          <a href="help.html">Help</a>
+        </nav>
+        <div class="header-actions">
+          <a class="utility-link" href="wishlist.html">Wishlist <span class="count-badge" data-wishlist-count>0</span></a>
+          <a class="utility-link" href="cart.html">Cart <span class="count-badge" data-cart-count>0</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-card">
+          <p class="eyebrow">Checkout</p>
+          <h1>Complete your order in one clean flow.</h1>
+          <p class="lead">Enter shipping details, choose a payment method, and place a locally confirmed NexStep order with a premium retail-style summary.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container checkout-grid">
+        <div class="checkout-card">
+          <form class="form-stack" data-checkout-form>
+            <div class="field-grid">
+              <label class="field"><span>First Name</span><input type="text" name="first_name" required></label>
+              <label class="field"><span>Last Name</span><input type="text" name="last_name" required></label>
+            </div>
+            <div class="field-grid">
+              <label class="field"><span>Email</span><input type="email" name="email" required></label>
+              <label class="field"><span>Phone</span><input type="tel" name="phone" required></label>
+            </div>
+            <div class="field-grid">
+              <label class="field"><span>Address</span><input type="text" name="address" required></label>
+              <label class="field"><span>ZIP Code</span><input type="text" name="zip" required></label>
+            </div>
+            <div class="field-grid">
+              <label class="field"><span>City</span><input type="text" name="city" required></label>
+              <label class="field"><span>State</span><input type="text" name="state" required></label>
+            </div>
+            <div>
+              <p class="eyebrow">Payment Method</p>
+              <div class="inline-options">
+                <label class="payment-option"><input type="radio" name="payment_method" value="Credit / Debit Card" checked><span><strong>Card</strong><br>Visa, Mastercard, AmEx</span></label>
+                <label class="payment-option"><input type="radio" name="payment_method" value="PayPal"><span><strong>PayPal</strong><br>Fast wallet checkout</span></label>
+                <label class="payment-option"><input type="radio" name="payment_method" value="Cash on Delivery"><span><strong>COD</strong><br>Eligible U.S. addresses</span></label>
+              </div>
+              <div class="payment-detail" data-payment-detail="Credit / Debit Card">
+                <div class="field-grid">
+                  <label class="field"><span>Card Number</span><input type="text" name="card_number" placeholder="4111 1111 1111 1111"></label>
+                  <label class="field"><span>Name on Card</span><input type="text" name="card_name"></label>
+                </div>
+                <div class="field-grid">
+                  <label class="field"><span>Expiry</span><input type="text" name="card_expiry" placeholder="MM/YY"></label>
+                  <label class="field"><span>CVV</span><input type="text" name="card_cvv" placeholder="123"></label>
+                </div>
+              </div>
+              <div class="payment-detail" data-payment-detail="PayPal">
+                <label class="field"><span>PayPal Email</span><input type="email" name="paypal_email" placeholder="paypal@example.com"></label>
+              </div>
+              <div class="payment-detail" data-payment-detail="Cash on Delivery">
+                <p class="form-note">Cash on Delivery is available for qualifying addresses and may require phone confirmation from support.</p>
+              </div>
+            </div>
+            <label class="field"><span>Delivery Notes</span><textarea name="notes" placeholder="Apartment number, building access, or delivery instructions"></textarea></label>
+            <button class="button primary full" type="submit">Place Order</button>
+            <p class="form-note">Placing an order confirms you agree to the <a href="terms.html">Terms &amp; Conditions</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+            <p class="form-message" data-form-message></p>
+          </form>
+        </div>
+        <aside class="summary-card stack-card">
+          <div>
+            <p class="eyebrow">Order Summary</p>
+            <div data-checkout-summary></div>
+          </div>
+          <div class="info-list">
+            <span>Orders over $175 ship free in the U.S.</span>
+            <span>Need payment guidance? Visit <a href="payment-methods.html">Payment Methods</a>.</span>
+            <span>Returns are supported under the <a href="return-policy.html">Return Policy</a>.</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div class="footer-meta"><span>&copy; 2026 NexStep</span><span><a href="return-policy.html">Return Policy</a> | <a href="payment-methods.html">Payment Methods</a></span></div></div></footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact NexStep customer support for orders, returns, product questions, and website help.">
+  <title>Contact NexStep | Customer Contact Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>Contact NexStep support for orders, returns, products, or website help.</span>
+      <span>Email: support@nexstep.site</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">NexStep</span><span class="brand-note">Premium Shoe House</span></a>
+      <button class="menu-toggle" type="button" data-menu-toggle>Menu</button>
+      <div class="nav-shell" data-nav-shell>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="help.html">Help</a>
+        </nav>
+        <div class="header-actions">
+          <a class="utility-link" href="cart.html">Cart <span class="count-badge" data-cart-count>0</span></a>
+          <a class="button primary" href="faq.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-card">
+          <p class="eyebrow">Contact Us</p>
+          <h1>Support designed like a real retail contact center.</h1>
+          <p class="lead">This page takes structural cues from major footwear support hubs: quick-help categories, direct contact guidance, order-first routing, and a clear form for shoppers who need help now.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="notice-banner">
+          <div>
+            <p class="eyebrow">Before You Submit</p>
+            <h3>Have your order number ready if your request is about a purchase.</h3>
+            <p>To protect your information, do not include full card numbers or other sensitive payment details in your message.</p>
+          </div>
+          <a class="button secondary" href="customer-service.html">Customer Service Options</a>
+        </div>
+
+        <div class="support-grid">
+          <article class="contact-card"><strong>Order Support</strong><p>Questions about checkout, billing, order status, or shipping confirmation.</p><p><a href="customer-service.html">Go to customer service</a></p></article>
+          <article class="contact-card"><strong>Returns &amp; Exchanges</strong><p>Need help with size issues, return eligibility, or a delivery concern?</p><p><a href="return-policy.html">Review return policy</a></p></article>
+          <article class="contact-card"><strong>Payment Questions</strong><p>See supported payment types and secure checkout guidance before you order.</p><p><a href="payment-methods.html">Payment methods</a></p></article>
+          <article class="contact-card"><strong>General Help</strong><p>FAQ content, policy guidance, and site assistance for browsing or account questions.</p><p><a href="help.html">Visit help</a></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-lanes">
+        <div class="contact-card stack-card">
+          <div>
+            <p class="eyebrow">Direct Contact</p>
+            <h3>NexStep Support Team</h3>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:support@nexstep.site">support@nexstep.site</a>
+            <span>Service region: United States</span>
+            <span>Response target: within 1 business day</span>
+            <span>Best for order updates, returns, product details, and checkout issues.</span>
+          </div>
+          <div class="badge-row">
+            <span class="badge-soft">Orders</span>
+            <span class="badge-soft">Returns</span>
+            <span class="badge-soft">Payments</span>
+            <span class="badge-soft">Sizing</span>
+          </div>
+          <div class="contact-notes">
+            <div class="note-row"><strong>Helpful details to include</strong><span>Order number, product name, purchase email, and a short description of the issue.</span></div>
+            <div class="note-row"><strong>Fastest path</strong><span>Use the topic selector on the form so the request is routed correctly.</span></div>
+          </div>
+        </div>
+        <div class="checkout-card">
+          <form class="form-stack" data-store-form>
+            <div class="field-grid">
+              <label class="field"><span>First Name</span><input type="text" name="first_name" required></label>
+              <label class="field"><span>Last Name</span><input type="text" name="last_name" required></label>
+            </div>
+            <div class="field-grid">
+              <label class="field"><span>Email</span><input type="email" name="email" required></label>
+              <label class="field"><span>Phone</span><input type="tel" name="phone" placeholder="Optional"></label>
+            </div>
+            <div class="field-grid">
+              <label class="field"><span>Order Number</span><input type="text" name="order_number" placeholder="Optional"></label>
+              <label class="field"><span>Topic</span><select name="topic" required><option value="">Choose one</option><option>Order question</option><option>Returns & exchanges</option><option>Payment help</option><option>Product information</option><option>Website help</option><option>Other</option></select></label>
+            </div>
+            <label class="field"><span>Preferred Contact</span><select name="contact_preference" required><option value="">Choose one</option><option>Email</option><option>Email with order updates</option><option>General support follow-up</option></select></label>
+            <label class="field"><span>Message</span><textarea name="message" required placeholder="Tell NexStep how we can help."></textarea></label>
+            <button class="button primary full" type="submit">Send Message</button>
+            <p class="form-message" data-form-message></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-meta">
+        <span>&copy; 2026 NexStep</span>
+        <span><a href="help.html">Help</a> | <a href="customer-service.html">Customer Service</a> | <a href="faq.html">FAQ</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
